@@ -1,0 +1,30 @@
+<div class = "container add">
+<h1>{{title}}</h1>
+<img src = "/images/globe.png" class = "globe"/>
+<div class = "form">
+<form method = "POST" action = "">
+
+<div class = "addForm">
+Name: <input type = "text" name = "itemName" class = "textbox">
+</br></br>
+Category: 
+<select name = "category" class = "button">
+{{#each categories}}
+<option value="{{name}}">{{name}}</option>
+{{/each}}
+</select>
+</br></br>
+Due Date: <input type = "date" name = "dueDate" class = "textbox">
+</br></br>
+Description: <input type = "text" name = "description" class = "textbox">
+</br></br>
+<input type="hidden" name="slug" value="{{slug}}">
+</div>
+
+<input type = "submit" class = "button" value = "save">
+
+</form>
+</br>
+<a href = "/../user/{{username}}">cancel</a>
+</div>
+</div>

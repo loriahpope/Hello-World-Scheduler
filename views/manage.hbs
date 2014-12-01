@@ -1,0 +1,41 @@
+<div class = "container manage">
+<h1>{{title}}</h1>
+<img src = "/images/globe.png" class = "globe"/>
+
+<table id = "myCategories">
+	<tbody>
+		{{#each categories}}
+			<tr>
+				<td class = "color" style="background-color:{{color}}"></td>
+				<td>{{name}}</td>
+				<td><a href="#">delete</a></td>
+			</tr>
+		{{/each}}
+
+	</tbody>
+</table>
+
+<form method = "POST" action="">
+<input type = "text" class = "textbox" name = "newCategory">
+
+<select name = "colors" class = "button">
+<option value = "rgb(102, 109, 255)">Purple</option>
+<option value = "rgb(2, 5, 86)">Navy</option>
+<option value = "rgb(1, 123, 2)">Green</option>
+<option value = "rgb(255, 165, 26)">Gold</option>
+<option value = "rgb(255, 89, 89)">Salmon</option>
+<option value = "rgb(155, 224, 153)">Mint</option>
+</select>
+
+
+
+</br></br>
+<input type = "submit" class = "button" value = "add">
+</form>
+</br>
+
+
+<a href = "/../user/{{username}}">back</a>
+</div>
+
+<script src="/javascripts/manage.js"></script>

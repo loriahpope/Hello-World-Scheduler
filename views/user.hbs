@@ -1,0 +1,57 @@
+<div class = "container user">
+
+<div class = "userPage">
+<img src = "/images/globe.png" class = "globe"/>
+<h1>Welcome, {{firstName}}!</h1>
+
+<h3>Here's what's on your plate for today:</h3>
+
+<table class = "todo">
+	<tbody>
+		<tr>
+			<td class = "list">
+				<h3>{{firstName}}'s' To-Do List:</h3>
+
+				<form method = "POST" action = "/user/">
+
+				<ul class = "tasks" type="none">
+				{{#each items}}
+
+					{{#unless checked}}
+
+					<li id ="{{slug}}">
+						<input type = "checkbox" name = "itemCheckbox" value="{{name}}">
+						<a href ="#">{{name}}</a>
+					</li>
+
+					{{/unless}}
+
+					<input type="hidden" name="slug" value="{{slug}}">
+
+				{{/each}}
+				</ul>
+				<input type = "submit" class = "button" value = "Delete Checked">
+				</form>
+
+			</td>
+
+
+
+			<td class = "chart" id = "chart">
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<br>
+<a href = "/../add/{{username}}">add new item</a>
+<br>
+<a href = "/../manage/{{slug}}">manage categories</a>
+<br>
+<a href = "/../">logout</a>
+
+</div>
+</div>
+
+<script src="/javascripts/raphael.js"></script>
+<script src="/javascripts/user.js"></script>

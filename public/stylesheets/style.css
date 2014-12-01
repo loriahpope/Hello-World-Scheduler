@@ -1,0 +1,287 @@
+html{
+	background-color: #fff;
+}
+
+.container {
+	background-color: rgba(40, 40, 147, 0.13);
+	border: 5px dashed rgb(40, 40, 147);
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	text-transform: lowercase;
+	width: auto;
+	height: auto;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-family: futura;
+	z-index: -1;
+}
+
+.index{
+	width: 50%;
+	height: 200px;
+	z-index: -1;
+	margin: 35% auto;
+}
+
+.account{
+	width: 480px;
+	height: 500px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.user{
+	height: 500px;
+	width: 75%;
+	min-width: 480px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.add, .manage{
+	width: 415px;
+	height: 53%;
+}
+
+select{
+	background-color: red;
+}
+
+.manage{
+	height: auto;
+	min-height: 600px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.addForm{
+	text-align: left;
+	margin: 0 auto;
+	width: 275px;
+}
+
+.textbox{
+	height: 20px;
+	border: 3px solid rgb(40, 40, 147);
+	font-family: futura;
+	font-size: 14px;
+}
+
+.color{
+	width: 30px;
+}
+
+#cat1{
+	background-color: rgb(102, 109, 255);
+}
+
+#cat2{
+	background-color: rgb(2, 5, 86);
+}
+
+#cat3{
+	background-color: rgb(1, 123, 2);
+}
+
+#cat4{
+	background-color: rgb(255, 165, 26);
+}
+
+#cat5{
+	background-color: rgb(255, 89, 89);
+}
+
+#cat6{
+	background-color: rgb(155, 224, 153);
+}
+
+h3{
+	text-align: center;
+	text-transform: lowercase;
+}
+
+a {
+	color: rgb(40, 40, 147);
+	text-decoration: none;
+}
+
+a:hover{
+	color: rgba(40, 40, 147, 0.13);
+}
+
+.globe{
+	position: absolute;
+	width: 100px;
+	top: -45px;
+	left: -30px;
+}
+
+.todo{
+	background-color: #fff;
+	width: 100%;
+	height: 300px;
+	border: 3px solid rgb(40, 40, 147);
+}
+
+.list{
+	border-right: 3px dashed rgb(40, 40, 147);
+	width: 50%;
+	vertical-align: text-top;
+}
+
+.tasks{
+	text-align: left;
+}
+
+.chart{
+	width: 46%;
+}
+
+.formPage{
+	background-color: #fff;
+	padding: 15px;
+	border: 1px solid #000;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-top: 5px solid;
+}
+
+.button{
+	background-color: rgb(40, 40, 147);
+	border: none;
+	border-radius: 5px;
+	width: 150px;
+	height: 25px;
+	color: rgba(146, 146, 166, 1);
+	font-family: futura;
+	box-shadow: -2px 2px 1px;
+	font-size: 14px;
+}
+
+.bottomSection{
+	text-align: center;
+}
+
+.quantity{
+	width: 50px;
+}
+
+#myCategories{
+	background-color: #fff;
+	margin: 10px auto;
+	padding: 10px;
+	width: 60%;
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+#myCategories td{
+	border: 1px solid;
+}
+
+.create{
+	text-align: center;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.introDiv{
+	width: 176px;
+	height: 179px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+#introImg{
+	position: absolute;
+	left:35%;
+	top: 250px;
+	-webkit-animation: slideIn 3s;
+	animation: slideIn 3s;
+}
+
+@-webkit-keyframes slideIn{
+	from{
+		top: -180px;
+	}
+	to{
+		top: 250px;
+	}
+}
+@keyframes slideIn{
+	from{
+		top: -180px;
+	}
+	to{
+		top: 250px;
+	}
+}
+
+.fadeOut{
+	opacity: 0;
+	-webkit-animation: fadeOut 3s;
+	animation: fadeOut 3s;
+}
+
+@-webkit-keyframes fadeOut{
+	from{
+		opacity: 1;
+	}
+}
+@keyframes fadeOut{
+	from{
+		opacity: 1;
+	}
+}
+
+.fadeIn{
+	opacity: 1;
+	visibility: visible !important;
+	-webkit-animation: fadeIn 3s;
+	animation: fadeIn 3s;
+}
+
+@-webkit-keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+}
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+}
+
+.overlay{
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	border-radius: 10px;
+	border: 5px dashed rgb(40, 40, 147);
+	background-color: rgb(40, 40, 147);
+	margin-top: 30%;
+	margin-bottom: 30%;
+}
+
+.cancel{
+	text-align: center;
+	font-family: futura;
+	font-size: 22px;
+	color: #fff;
+	border-bottom: 3px dashed;
+	text-transform: lowercase;
+	padding-bottom: 5px;
+}
+
+
+
+
+
+

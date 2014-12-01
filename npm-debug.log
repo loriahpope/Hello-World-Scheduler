@@ -1,0 +1,130 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'homebrew' ]
+2 info using npm@1.4.23
+3 info using node@v0.10.31
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'homebrew', null ]
+6 verbose cache add name=undefined spec="homebrew" args=["homebrew",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'homebrew',
+7 verbose parsed url   path: 'homebrew',
+7 verbose parsed url   href: 'homebrew' }
+8 silly lockFile 888b4945-homebrew homebrew
+9 verbose lock homebrew /Users/loriahpope/.npm/888b4945-homebrew.lock
+10 silly lockFile 888b4945-homebrew homebrew
+11 silly lockFile 888b4945-homebrew homebrew
+12 verbose addNamed [ 'homebrew', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 375172a7-homebrew homebrew@
+15 verbose lock homebrew@ /Users/loriahpope/.npm/375172a7-homebrew.lock
+16 silly addNameRange { name: 'homebrew', range: '*', hasData: false }
+17 verbose request where is /homebrew
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 1f3b4f953cf0d38c
+20 verbose url raw /homebrew
+21 verbose url resolving [ 'https://registry.npmjs.org/', './homebrew' ]
+22 verbose url resolved https://registry.npmjs.org/homebrew
+23 verbose request where is https://registry.npmjs.org/homebrew
+24 info trying registry request attempt 1 at 14:12:32
+25 verbose etag "EGCFFZRJ3AXT3GVJFGPE7PVGT"
+26 http GET https://registry.npmjs.org/homebrew
+27 http 304 https://registry.npmjs.org/homebrew
+28 silly registry.get cb [ 304,
+28 silly registry.get   { date: 'Sat, 01 Nov 2014 18:12:33 GMT',
+28 silly registry.get     server: 'Apache',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     'last-modified': 'Sat, 01 Nov 2014 18:12:33 GMT',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     etag: '"EGCFFZRJ3AXT3GVJFGPE7PVGT"',
+28 silly registry.get     age: '0',
+28 silly registry.get     'x-served-by': 'cache-jfk1021-JFK',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1414865553.192886,VS0,VE347',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'content-length': '0',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 verbose etag https://registry.npmjs.org/homebrew from cache
+30 silly addNameRange number 2 { name: 'homebrew', range: '*', hasData: true }
+31 silly addNameRange versions [ 'homebrew', [ '0.0.0', '0.0.1', '0.0.2' ] ]
+32 verbose addNamed [ 'homebrew', '0.0.2' ]
+33 verbose addNamed [ '0.0.2', '0.0.2' ]
+34 silly lockFile e286f8ef-homebrew-0-0-2 homebrew@0.0.2
+35 verbose lock homebrew@0.0.2 /Users/loriahpope/.npm/e286f8ef-homebrew-0-0-2.lock
+36 silly lockFile e286f8ef-homebrew-0-0-2 homebrew@0.0.2
+37 silly lockFile e286f8ef-homebrew-0-0-2 homebrew@0.0.2
+38 silly lockFile 375172a7-homebrew homebrew@
+39 silly lockFile 375172a7-homebrew homebrew@
+40 silly resolved [ { name: 'homebrew',
+40 silly resolved     version: '0.0.2',
+40 silly resolved     description: 'The missing package manager for OS X',
+40 silly resolved     main: 'index.js',
+40 silly resolved     repository: { type: 'git', url: 'https://github.com/afc163/homebrew' },
+40 silly resolved     scripts: { preinstall: 'ruby install' },
+40 silly resolved     author: { name: 'afc163', email: 'afc163@gmail.com' },
+40 silly resolved     license: 'ISC',
+40 silly resolved     gitHead: 'a8fae8e433b5c374ff28986174a702a5194499a5',
+40 silly resolved     bugs: { url: 'https://github.com/afc163/homebrew/issues' },
+40 silly resolved     homepage: 'https://github.com/afc163/homebrew',
+40 silly resolved     _id: 'homebrew@0.0.2',
+40 silly resolved     _shasum: '6bce46693d693825a245ef90de82900457fd1133',
+40 silly resolved     _from: 'homebrew@',
+40 silly resolved     _npmVersion: '1.4.14',
+40 silly resolved     _npmUser: { name: 'afc163', email: 'afc163@gmail.com' },
+40 silly resolved     maintainers: [ [Object] ],
+40 silly resolved     dist:
+40 silly resolved      { shasum: '6bce46693d693825a245ef90de82900457fd1133',
+40 silly resolved        tarball: 'http://registry.npmjs.org/homebrew/-/homebrew-0.0.2.tgz' },
+40 silly resolved     directories: {},
+40 silly resolved     _resolved: 'https://registry.npmjs.org/homebrew/-/homebrew-0.0.2.tgz',
+40 silly resolved     readme: 'ERROR: No README data found!' } ]
+41 info install homebrew@0.0.2 into /Users/loriahpope/Desktop/Assignments/Fall_2014/AIT/HW5/grocery
+42 info installOne homebrew@0.0.2
+43 verbose node_modules/homebrew unbuild
+44 verbose tar unpack /Users/loriahpope/.npm/homebrew/0.0.2/package.tgz
+45 silly lockFile 25f447c0-W5-grocery-node-modules-homebrew tar:///Users/loriahpope/Desktop/Assignments/Fall_2014/AIT/HW5/grocery/node_modules/homebrew
+46 verbose lock tar:///Users/loriahpope/Desktop/Assignments/Fall_2014/AIT/HW5/grocery/node_modules/homebrew /Users/loriahpope/.npm/25f447c0-W5-grocery-node-modules-homebrew.lock
+47 silly lockFile 8ebc6673-e-npm-homebrew-0-0-2-package-tgz tar:///Users/loriahpope/.npm/homebrew/0.0.2/package.tgz
+48 verbose lock tar:///Users/loriahpope/.npm/homebrew/0.0.2/package.tgz /Users/loriahpope/.npm/8ebc6673-e-npm-homebrew-0-0-2-package-tgz.lock
+49 silly gunzTarPerm modes [ '755', '644' ]
+50 silly gunzTarPerm extractEntry package.json
+51 silly gunzTarPerm extractEntry README.md
+52 silly gunzTarPerm extractEntry install
+53 silly lockFile 25f447c0-W5-grocery-node-modules-homebrew tar:///Users/loriahpope/Desktop/Assignments/Fall_2014/AIT/HW5/grocery/node_modules/homebrew
+54 silly lockFile 25f447c0-W5-grocery-node-modules-homebrew tar:///Users/loriahpope/Desktop/Assignments/Fall_2014/AIT/HW5/grocery/node_modules/homebrew
+55 silly lockFile 8ebc6673-e-npm-homebrew-0-0-2-package-tgz tar:///Users/loriahpope/.npm/homebrew/0.0.2/package.tgz
+56 silly lockFile 8ebc6673-e-npm-homebrew-0-0-2-package-tgz tar:///Users/loriahpope/.npm/homebrew/0.0.2/package.tgz
+57 info preinstall homebrew@0.0.2
+58 verbose unsafe-perm in lifecycle true
+59 info homebrew@0.0.2 Failed to exec preinstall script
+60 verbose node_modules/homebrew unbuild
+61 info preuninstall homebrew@0.0.2
+62 info uninstall homebrew@0.0.2
+63 verbose true,/Users/loriahpope/Desktop/Assignments/Fall_2014/AIT/HW5/grocery/node_modules,/Users/loriahpope/Desktop/Assignments/Fall_2014/AIT/HW5/grocery/node_modules unbuild homebrew@0.0.2
+64 info postuninstall homebrew@0.0.2
+65 error homebrew@0.0.2 preinstall: `ruby install`
+65 error Exit status 1
+66 error Failed at the homebrew@0.0.2 preinstall script.
+66 error This is most likely a problem with the homebrew package,
+66 error not with npm itself.
+66 error Tell the author that this fails on your system:
+66 error     ruby install
+66 error You can get their info via:
+66 error     npm owner ls homebrew
+66 error There is likely additional logging output above.
+67 error System Darwin 13.4.0
+68 error command "node" "/usr/local/bin/npm" "install" "homebrew"
+69 error cwd /Users/loriahpope/Desktop/Assignments/Fall_2014/AIT/HW5/grocery
+70 error node -v v0.10.31
+71 error npm -v 1.4.23
+72 error code ELIFECYCLE
+73 verbose exit [ 1, true ]
