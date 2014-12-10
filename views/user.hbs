@@ -38,6 +38,17 @@
 
 
 			<td class = "chart" id = "chart">
+
+				<canvas id = "myChart" width="250" height="250"></canvas>
+
+				<div id="data">
+					{{#each data}}
+						<p id = "{{label}} value" class = "value">{{value}}</p>
+						<p id = "{{label}} color" class = "chartColor">{{color}}</p>
+						<p id = "{{label}}" class = "label">{{label}}</p>
+					{{/each}}
+				</div>
+
 			</td>
 		</tr>
 	</tbody>
@@ -53,5 +64,7 @@
 </div>
 </div>
 
+
+<script src="/javascripts/Chart.js"></script>
 <script src="/javascripts/raphael.js"></script>
 <script src="/javascripts/user.js"></script>

@@ -28,9 +28,84 @@ function clickListItem(event){
 	document.body.appendChild(overlay);
 }
 
-var chart = document.getElementById("chart");
+window.onload = function(){
+	loadChart();
+}
 
-var paper = Raphael(chart);
-var chartBase = paper.ellipse(115, 115, 105, 105);
-chartBase.attr({"fill": "rgba(40, 40, 147, 0.13)", "stroke": "rgb(40, 40, 147)", "stroke-width": 4});
+function loadChart(){
+	var ctx = document.getElementById("myChart").getContext("2d");
+
+	var values = document.getElementsByClassName("value");
+	var colors = document.getElementsByClassName("chartColor");
+	var labels = document.getElementsByClassName("label");
+
+	var w = [];
+	var x = [];
+	var y = [];
+	var z = [];
+	var total = 0;
+
+
+
+	for(var i = 0; i < values.length; i++){
+		x.push(values[i].innerHTML);
+	}
+
+	for(var i = 0; i < x.length; i++){
+		var h = parseInt(x[i]);
+		total = total + h;
+	}
+
+	for(var i = 0; i < colors.length; i++){
+		y.push(colors[i].innerHTML);
+	}
+
+	for(var i = 0; i < labels.length; i++){
+		z.push(labels[i].innerHTML);
+	}
+
+			console.log("x: " + x.length)
+
+	for(var i = 0; i < x.length; i++){
+		var h = ((x[i]/total)*100).toFixed(0);
+		w.push(h);
+	}
+
+	console.log("w: " + w);
+
+	console.log(x);
+	console.log(y);
+	console.log(z);
+
+	console.log("total: " + total);
+
+	var data = [];
+
+	for(var i = 0; i < x.length; i++){
+		var dataPoint = {value: x[i]/total, color: y[i], label: z[i]}
+		data.push(dataPoint);
+	}
+
+	console.log(data);
+
+	var newChart = new Chart(ctx).Pie(data, {percentageInnerCutout:50});
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

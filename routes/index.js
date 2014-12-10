@@ -49,15 +49,56 @@ router.post('/account', function(req, res){
 });
 
 router.get('/user/:slug', function(req, res){
-	var current = req.params.slug;
+var current = req.params.slug;
 	console.log("user current: " + current);
+
 	User.findOne({username: current}, function(err, user, count){
+		var cats = [];
+		var data = [];
+
+		for(var i = 0; i < user.items.length; i++){
+			if(user.items[i].checked == false){
+				cats.push(user.items[i].category);
+			}
+		}
+
+		for(var i = 0; i < cats.length; i++){
+			//console.log("length: " + cats.length);
+			//console.log("cats: " + cats);
+			var current = cats[i];
+			var count = 0;
+			var test = 0;
+			//console.log("test: " + test);
+			for(var j = 0; j < cats.length; j++){
+				if(current == cats[j]){
+					count++;
+					if(cats.length >= 2){
+						cats.splice(j,1);
+					}
+					//console.log("length: " + cats.length);
+					//console.log("cats: " + cats);
+				}
+				test++;
+			}
+			//console.log("test: " + test);
+
+			for(var z = 0; z < user.categories.length; z++){
+				if(current == user.categories[i].name){
+					var dataPoint = {value: count, color: user.categories[i].color, label: current};
+				}
+			}
+			data.push(dataPoint);
+			
+		}
+		console.log(data);
+
 		res.render('user', {
 			title: user.firstName + "'s List",
 			firstName: user.firstName,
 			items: user.items,
 			slug: user.slug,
-			username: user.username
+			username: user.username,
+			data: data
 		});
 	});
 });

@@ -21,31 +21,31 @@
 @keyframes fadeIn {
   from {
     opacity: 0; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\0000345}}
 html {
   background-color: #fff;
   font-family: futura;
   text-transform: lowercase;
   text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\0000352}}
 h3 {
   text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\0000356}}
 a {
   color: #282893;
   text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\0000361}}
 a:hover {
   color: rgba(40, 40, 147, 0.13); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\0000365}}
 ul {
   list-style-type: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\0000369}}
 .container {
   background-color: rgba(40, 40, 147, 0.13);
   border: 5px dashed #282893;
@@ -63,75 +63,75 @@ ul {
   margin: 60px auto; }
 
 /*Individual Pages*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\0000388}}
 .account {
   width: 480px;
   height: 500px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\0000393}}
 .add, .manage {
   width: 415px;
   height: 53%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\0000398}}
 .manage {
   min-height: 600px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003102}}
 #index {
   width: 50%;
   height: 200px;
   z-index: -1;
   margin: 35% auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003109}}
 .user {
   height: 500px;
   width: 75%;
   min-width: 480px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003115}}
 .globe {
   position: absolute;
   width: 100px;
   top: -45px;
   left: -30px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003122}}
 .addform {
   text-align: left;
   margin: 0 auto;
   width: 275px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003128}}
 .textbox {
   height: 20px;
   border: 3px solid #282893;
   font-size: 14px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003134}}
 .color {
   width: 30px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003138}}
 .todo {
   background-color: #fff;
   width: 100%;
   height: 300px;
   border: 3px solid #282893; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003144}}
   .todo .list {
     border-right: 3px dashed #282893;
     width: 50%;
     vertical-align: text-top; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003149}}
     .todo .list .tasks {
       text-align: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003153}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003153}}
   .todo .chart {
     width: 46%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003158}}
 .formPage {
   background-color: #fff;
   padding: 15px;
@@ -139,7 +139,7 @@ ul {
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003166}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003166}}
 .button {
   background-color: #282893;
   border: none;
@@ -150,7 +150,7 @@ ul {
   box-shadow: -2px 2px 1px;
   font-size: 14px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003177}}
 #myCategories {
   background-color: #fff;
   margin: 10px auto;
@@ -158,21 +158,21 @@ ul {
   width: 60%;
   border: 1px solid;
   border-collapse: collapse; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003185}}
   #myCategories td {
     border: 1px solid; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003190}}
 .create {
   text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003194}}
 .introDiv {
   width: 176px;
   height: 179px;
   margin: 0 auto;
   background-color: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003200}}
   .introDiv #introImg {
     position: absolute;
     left: 35%;
@@ -180,20 +180,20 @@ ul {
     -webkit-animation: slideIn 3s;
     animation: slideIn 3s; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003209}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003209}}
 .fadeOut {
   opacity: 0;
   -webkit-animation: fadeOut 3s;
   animation: fadeOut 3s; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003215}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003215}}
 .fadeIn {
   opacity: 1;
   visibility: visible !important;
   -webkit-animation: fadeIn 3s;
   animation: fadeIn 3s; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003222}}
 .overlay {
   width: 300px;
   height: 300px;
@@ -204,12 +204,16 @@ ul {
   margin-top: 30%;
   margin-bottom: 30%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello\/public\/stylesheets\/hello\.scss}line{font-family:\00003233}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003233}}
 .cancel {
   text-align: center;
   font-size: 22px;
   color: #fff;
   border-bottom: 3px dashed;
   padding-bottom: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/loriahpope\/Desktop\/Assignments\/Fall_2014\/AIT\/hello2\/public\/stylesheets\/hello\.scss}line{font-family:\00003241}}
+.value, .chartColor, .label {
+  display: none; }
 
 /*# sourceMappingURL=hello.css.map */
