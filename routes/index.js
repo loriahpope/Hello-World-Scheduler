@@ -55,42 +55,59 @@ var current = req.params.slug;
 	User.findOne({username: current}, function(err, user, count){
 		var cats = [];
 		var data = [];
+		var undone = [];
 
 		for(var i = 0; i < user.items.length; i++){
 			if(user.items[i].checked == false){
 				cats.push(user.items[i].category);
+				undone.push(user.items[i]);
 			}
 		}
+
+		var itemDescriptions = [];
+
+		for(var i = 0; i < undone.length; i++){
+			var itemInfo = {description: undone[i].description, added: undone[i].dateAdded, due: undone[i].dueDate, category: undone[i].category, name: undone[i].name};
+			itemDescriptions.push(itemInfo);
+		}
+
+
 
 		for(var i = 0; i < cats.length; i++){
-			//console.log("length: " + cats.length);
-			//console.log("cats: " + cats);
-			var current = cats[i];
 			var count = 0;
-			var test = 0;
-			//console.log("test: " + test);
+			var current = cats[i];
 			for(var j = 0; j < cats.length; j++){
-				if(current == cats[j]){
+				if(cats[j] == current){
 					count++;
-					if(cats.length >= 2){
-						cats.splice(j,1);
-					}
-					//console.log("length: " + cats.length);
-					//console.log("cats: " + cats);
 				}
-				test++;
 			}
-			//console.log("test: " + test);
-
 			for(var z = 0; z < user.categories.length; z++){
-				if(current == user.categories[i].name){
-					var dataPoint = {value: count, color: user.categories[i].color, label: current};
+				if(current == user.categories[z].name){
+					console.log("color: " + user.categories[z].color);
+					var dataPoint = {value: count, color: user.categories[z].color, label: current};
+					data.push(dataPoint);
 				}
 			}
-			data.push(dataPoint);
-			
 		}
-		console.log(data);
+
+		var test = [];
+		for(var i = 0; i < data.length; i++){
+			console.log(data[i].label);
+		}
+
+		for(var i = 0; i < data.length; i++){
+			var currentLabel = data[i].label;
+			var count = 0;
+			for(var j = 0; j < data.length; j++){
+				if(currentLabel == data[j].label){
+					count++;
+					console.log(count);
+				}
+			}
+			if(count > 1){
+				data.splice(i, 1);
+			}
+		}
 
 		res.render('user', {
 			title: user.firstName + "'s List",
@@ -98,36 +115,46 @@ var current = req.params.slug;
 			items: user.items,
 			slug: user.slug,
 			username: user.username,
-			data: data
+			data: data,
+			itemDescription: itemDescriptions
 		});
 	});
 });
 
-router.post('/user/', function(req, res) {
-	var checked = req.body.itemCheckbox;
+router.post('/user/:slug', function(req, res) {
 
-	if(checked != undefined){
-		if(checked.length == 1){
-			checked = req.body.name;
-		}
-		var checkedArray = ("" + req.body.itemCheckbox).split(",");
-		var slug = req.body.slug[0];
+	var user = req.params.slug;
+	console.log(user);
+	var slug = req.body.slug[0];
 
-		User.findOne({slug: slug}, function(err, list, count){
-		console.log("list: " + list);
-		for(var i = 0; i < list.items.length; i++){
+	if(slug.length == 1){
+		slug = req.body.slug;
+	}
+
+	var checkedArray = ("" + req.body.itemCheckbox).split(",");
+
+	console.log("checked: " + checkedArray.length);
+
+	if(checkedArray.length == 0){
+		console.log("no items checked!");
+	}
+
+	User.findOne({username: user}, function(err, user, count){
+		console.log(user.items);
+		for(var i = 0; i < user.items.length; i++){
 			for(var j = 0; j < checkedArray.length; j++){
-				if(list.items[i].name == checkedArray[j]){
-					list.items[i].checked = true;
-					list.save(function(saveErr, saveList, saveCount){
-						console.log(saveList);
+				if(user.items[i].name == checkedArray[j]){
+					user.items[i].checked = true;
+					user.save(function(saveErr, saveItems, saveCount){
+						console.log(saveItems);
 					});
 				}
 			}
 		}
-		res.redirect('/user/'+slug);
+
+		console.log("/user/"+user);
+		res.redirect('/user/'+req.params.slug);
 	});
-	}
 });
 
 router.get('/add/:slug', function(req, res) {

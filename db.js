@@ -33,6 +33,6 @@ mongoose.model('User', User);
 mongoose.model('Item', Item);
 mongoose.model('Category', Category);
 
-mongoose.connect('mongodb://localhost/hellodb');
+mongoose.connect('mongodb://localhost/hello');
 
 

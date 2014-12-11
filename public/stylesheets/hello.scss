@@ -103,7 +103,7 @@ ul{
 	width: 50%;
 	height: 200px;
 	z-index: -1;
-	margin: 35% auto;
+	//margin: 35% auto;
 }
 
 .user{
@@ -221,13 +221,12 @@ ul{
 
 .overlay{
 	width: 300px;
-	height: 300px;
-	margin: 0 auto;
+	height: auto;
+	margin: 175px auto;
 	border-radius: 10px;
 	border: 5px dashed $purple-color;
 	background-color: $purple-color;
-	margin-top: 30%;
-	margin-bottom: 30%;
+	padding-bottom: 20px;
 }
 
 .cancel{
@@ -238,10 +237,27 @@ ul{
 	padding-bottom: 5px;
 }
 
-.value, .chartColor, .label{
+.value, .chartColor, .label, .itemDescriptions{
 	display: none;
 }
 
+.errorMessage{
+	color: red;
+}
+
+.clickedItem{
+	color: #fff;
+	text-align: center;
+	margin-top: 21px;
+	text-shadow: -2px 2px #000;
+}
+
+.clickedItem p{
+	border-bottom: 1px dashed;
+	margin: 3px auto;
+	padding-bottom: 5px;
+	width: 200px;
+}
 
 
 

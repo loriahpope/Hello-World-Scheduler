@@ -12,7 +12,7 @@
 			<td class = "list">
 				<h3>{{firstName}}'s' To-Do List:</h3>
 
-				<form method = "POST" action = "/user/">
+				<form method = "POST" action = "/user/{{slug}}">
 
 				<ul class = "tasks" type="none">
 				{{#each items}}
@@ -32,6 +32,17 @@
 				</ul>
 				<input type = "submit" class = "button" value = "Delete Checked">
 				</form>
+
+				<div class = "itemDescriptions">
+					{{#each itemDescription}}
+						<p class = "{{name}} name">{{name}}</p>
+						<p class = "{{name}} category">category: {{category}}</p>
+						<p class = "{{name}} added">date added: {{added}}</p>
+						<p class = "{{name}} due">date due: {{due}}</p>
+						<p class = "{{name}} description">description: {{description}}</p>
+					{{/each}}
+				</div>
+
 
 			</td>
 

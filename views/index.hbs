@@ -3,6 +3,9 @@
 <img src = "/images/globe.png" class = "globe"/>
 
 <form method = "POST" action = "">
+{{#if message}}
+<p class = "errorMessage">{{message}}</p>
+{{/if}}
 
 Username </br>
 <input type = "text" name = "username">

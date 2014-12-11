@@ -1,3 +1,8 @@
+var v = [];
+var w = [];
+var x = [];
+var y = [];
+var z = [];
 var listItems = document.getElementsByTagName("li");
 
 for(var i = 0; i < listItems.length; i++){
@@ -25,11 +30,29 @@ function clickListItem(event){
 	cancel.appendChild(cancelTxt);
 	overlay.appendChild(cancel);
 
+	var clicked = event.target.innerHTML;
+	var details = document.getElementsByClassName(clicked);
+	var item = document.createElement("div");
+	item.className = "clickedItem";
+
+	for(var i = 0; i < details.length; i++){
+		var p = document.createElement("p");
+		p.className = details[i].className;
+		var pTxt = document.createTextNode(details[i].innerHTML);
+		if(pTxt.innerHTML == ""){
+			pTxt.innerHTML = "N/A";
+		}
+		p.appendChild(pTxt);
+		item.appendChild(p);
+		//overlay.appendChild(p);
+	}
+	overlay.appendChild(item);
 	document.body.appendChild(overlay);
 }
 
 window.onload = function(){
 	loadChart();
+	getItems();
 }
 
 function loadChart(){
@@ -71,7 +94,7 @@ function loadChart(){
 		w.push(h);
 	}
 
-	console.log("w: " + w);
+	console.log("YO: " + w);
 
 	console.log(x);
 	console.log(y);
@@ -88,9 +111,7 @@ function loadChart(){
 
 	console.log(data);
 
-	var newChart = new Chart(ctx).Pie(data, {percentageInnerCutout:50});
-
-
+	var newChart = new Chart(ctx).Pie(data, {percentageInnerCutout:30});
 }
 
 
@@ -99,7 +120,41 @@ function loadChart(){
 
 
 
+function getItems(){
+	var name = document.getElementsByClassName("name");
+	var category = document.getElementsByClassName("category");
+	var added = document.getElementsByClassName("added");
+	var due = document.getElementsByClassName("due");
+	var description = document.getElementsByClassName("description");
 
+	for(var i = 0; i < name.length; i++){
+		v.push(name[i].innerHTML);
+	}
+
+	for(var i = 0; i < category.length; i++){
+		w.push(category[i].innerHTML);
+	}
+
+	for(var i = 0; i < added.length; i++){
+		x.push(added[i].innerHTML);
+	}
+
+	for(var i = 0; i < due.length; i++){
+		y.push(due[i].innerHTML);
+	}
+
+	for(var i = 0; i < description.length; i++){
+		z.push(description[i].innerHTML);
+	}
+
+
+	console.log("v: " + v);
+	console.log("w: " + w);
+	console.log("x: " + x);
+	console.log("y: " + y);
+	console.log("z: " + z);
+
+}
 
 
 

@@ -10,6 +10,11 @@ var users = require('./routes/users');
 
 var app = express();
 
+var expressSession = require('express-session');
+app.use(expressSession({secret: 'mySecretKey'}));
+var flash = require('connect-flash');
+app.use(flash());
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
